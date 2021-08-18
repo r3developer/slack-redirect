@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        This page contains several techniques for forcing a browser level redirect so users can join the slack.
+        Right now, the text content on the page is all hidden, and is designed for a seamless redirect without any confusion
+    -->
+    <head>
+        <meta http-equiv="refresh" content="0; URL='https://join.slack.com/t/cordaledger/shared_invite/zt-qg4fft35-ldb97HIf74gImY9XuGybUg'" />
+    </head>
+<body>
+
+
+    <noscript>
+
+        <h2>slack.corda.net</h2>
+        <p>
+            Hi there! This page exists only to redirect to the signup page for our <a href="https://join.slack.com/t/cordaledger/shared_invite/zt-qg4fft35-ldb97HIf74gImY9XuGybUg">slack instance</a>.
+
+            <br>
+
+            If you're seeing this page you likely have javascript disabled, the link I've shared points to <a href="https://join.slack.com/t/cordaledger/shared_invite/zt-qg4fft35-ldb97HIf74gImY9XuGybUg">https://join.slack.com/t/cordaledger/shared_invite/zt-qg4fft35-ldb97HIf74gImY9XuGybUg</a>
+
+            <br>
+
+            You can also try clicking the button below.
+        </p>
+
+        <button onclick="myFunction()">Join Our Slack</button>
+
+    </noscript>
+
+    <script>
+    var url = "https://join.slack.com/t/cordaledger/shared_invite/zt-qg4fft35-ldb97HIf74gImY9XuGybUg";
+
+    function myFunction() {
+    // simulate an http redirect
+    window.location = url;
+    window.location.assign(url);
+
+    location.replace(url)
+    window.location.href = url;
+    }
+
+
+    myFunction();
+    </script>
+
+</body>
+</html>
+
